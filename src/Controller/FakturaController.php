@@ -36,9 +36,6 @@ class FakturaController extends \Symfony\Bundle\FrameworkBundle\Controller\Abstr
     {
         $em = $this->getDoctrine()->getManager();
 
-        foreach ($em->getRepository(Faktura::class)->findAll() as $item) {
-            dump($item->getPozycje()[0]);
-        }
         $nabywca = new Person();
         $nabywca->setName('Adam');
         $nabywca->setSurname('Nowak');
