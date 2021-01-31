@@ -36,6 +36,9 @@ class FakturaController extends \Symfony\Bundle\FrameworkBundle\Controller\Abstr
     {
         $em = $this->getDoctrine()->getManager();
 
+        foreach ($em->getRepository(Faktura::class)->findAll() as $item) {
+            dump($item->getPozycje()[0]);
+        }
         $nabywca = new Person();
         $nabywca->setName('Adam');
         $nabywca->setSurname('Nowak');
@@ -86,20 +89,15 @@ class FakturaController extends \Symfony\Bundle\FrameworkBundle\Controller\Abstr
     }
 
     /**
-     * @param int $id
-     * @Route("/remove/{id}")
+     * @param Faktura $faktura
+     * @param PozycjaFaktura $pozycja
+     * @return Response
+     * @Route("/remove/{faktura}/{pozycja}")
      */
-    public function removePozycjaFaktura(int $id)
+    public function removePozycjaFaktura(Faktura $faktura, PozycjaFaktura $pozycja)
     {
-        $pozycjaFaktura = $this->pozycjaRepository->find($id);
+        $faktura->removePozycje($pozycja);
 
-        if (!$pozycjaFaktura) {
-            throw new Exception("Pozycja o id $id nie istnieje w bazie!");
-        }
-
-        $faktura = $pozycjaFaktura->getFaktura();
-        $faktura->removePozycje($pozycjaFaktura);
-
-        return new Response("Poprawnie usunięto pozycję o id $id");
+        return new Response("Poprawnie usunięto pozycję z faktury");
     }
 }
