@@ -34,6 +34,11 @@ class Faktura
      */
     private $pozycje;
 
+    /**
+     * @ORM\Column(type="float", nullable=true)
+     */
+    private $value;
+
     public function __construct()
     {
         $this->pozycje = new ArrayCollection();
@@ -82,6 +87,7 @@ class Faktura
             $this->pozycje[] = $pozycje;
             $pozycje->setFaktura($this);
         }
+        $this->setValue();
 
         return $this;
     }
@@ -94,6 +100,23 @@ class Faktura
                 $pozycje->setFaktura(null);
             }
         }
+        $this->setValue();
+
+        return $this;
+    }
+
+    public function getValue(): ?float
+    {
+        return $this->value;
+    }
+
+    public function setValue(): self
+    {
+        $value = 0.00;
+        foreach ($this->getPozycje() as $pozycja) {
+            $value += $pozycja->getValue();
+        }
+        $this->value = $value;
 
         return $this;
     }

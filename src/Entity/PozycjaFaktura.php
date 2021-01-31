@@ -57,6 +57,9 @@ class PozycjaFaktura
     public function setValue(float $value): self
     {
         $this->value = $value;
+        if ($this->getFaktura()) {
+            $this->getFaktura()->setValue();
+        }
 
         return $this;
     }
