@@ -8,11 +8,16 @@
       <change afterPath="$PROJECT_DIR$/../ZnajdzImie/.idea/ZnajdzImie.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../calculatorOOP-master/.idea/calcOOP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/fos_rest.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FakturaController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wakacjeRT/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wakacjeRT/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Faktura.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Faktura.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/PozycjaFaktura.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PozycjaFaktura.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612114925588</updated>
-      <workItem from="1612114926677" duration="3432000" />
+      <workItem from="1612114926677" duration="5993000" />
     </task>
     <servers />
   </component>
@@ -76,9 +81,21 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="297" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1612117047292" />
+    <state x="302" y="129" key="NewPhpClassDialog" timestamp="1612119264666">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="302" y="129" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1612119264666" />
     <state x="171" y="39" key="SettingsEditor" timestamp="1612117762626">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="171" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1612117762626" />
+    <state x="424" y="191" key="refactoring.ChangeSignatureDialog" timestamp="1612120006084">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="424" y="191" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1612120006084" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1612122892718">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1612122892718" />
   </component>
 </project>
