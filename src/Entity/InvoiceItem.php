@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\PozycjaFakturaRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\InvoiceItemRepository;
 
 /**
- * @ORM\Entity(repositoryClass=PozycjaFakturaRepository::class)
+ * @ORM\Entity(repositoryClass=InvoiceItemRepository::class)
  */
-class PozycjaFaktura
+class InvoiceItem
 {
     /**
      * @ORM\Id
@@ -28,9 +28,9 @@ class PozycjaFaktura
     private $value;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Faktura::class, inversedBy="pozycje")
+     * @ORM\ManyToOne(targetEntity=Invoice::class, inversedBy="items")
      */
-    private $faktura;
+    private $invoice;
 
     public function getId(): ?int
     {
@@ -57,21 +57,21 @@ class PozycjaFaktura
     public function setValue(float $value): self
     {
         $this->value = $value;
-        if ($this->getFaktura()) {
-            $this->getFaktura()->setValue();
+        if ($this->getInvoice()) {
+            $this->getInvoice()->setValue();
         }
 
         return $this;
     }
 
-    public function getFaktura(): ?Faktura
+    public function getInvoice(): ?Invoice
     {
-        return $this->faktura;
+        return $this->invoice;
     }
 
-    public function setFaktura(?Faktura $faktura): self
+    public function setInvoice(?Invoice $invoice): self
     {
-        $this->faktura = $faktura;
+        $this->invoice = $invoice;
 
         return $this;
     }

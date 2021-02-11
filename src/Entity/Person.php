@@ -35,19 +35,19 @@ class Person
     private $address;
 
     /**
-     * @ORM\OneToMany(targetEntity=Faktura::class, mappedBy="person")
+     * @ORM\OneToMany(targetEntity=Invoice::class, mappedBy="person")
      */
-    private $fakturyNabywca;
+    private $invoiceBuyer;
 
     /**
-     * @ORM\OneToMany(targetEntity=Faktura::class, mappedBy="odbiorca")
+     * @ORM\OneToMany(targetEntity=Invoice::class, mappedBy="recipient")
      */
-    private $fakturaOdbiorca;
+    private $invoiceRecipient;
 
     public function __construct()
     {
-        $this->fakturyNabywca = new ArrayCollection();
-        $this->fakturaOdbiorca = new ArrayCollection();
+        $this->invoiceBuyer = new ArrayCollection();
+        $this->invoiceRecipient = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -92,29 +92,29 @@ class Person
     }
 
     /**
-     * @return Collection|Faktura[]
+     * @return Collection|Invoice[]
      */
-    public function getFaktury(): Collection
+    public function getInvoiceBuyer(): Collection
     {
-        return $this->fakturyNabywca;
+        return $this->invoiceBuyer;
     }
 
-    public function addFaktury(Faktura $faktury): self
+    public function addInvoice(Invoice $invoice): self
     {
-        if (!$this->fakturyNabywca->contains($faktury)) {
-            $this->fakturyNabywca[] = $faktury;
-            $faktury->setNabywca($this);
+        if (!$this->invoiceBuyer->contains($invoice)) {
+            $this->invoiceBuyer[] = $invoice;
+            $invoice->setBuyer($this);
         }
 
         return $this;
     }
 
-    public function removeFaktury(Faktura $faktury): self
+    public function removeInvoice(Invoice $invoice): self
     {
-        if ($this->fakturyNabywca->removeElement($faktury)) {
+        if ($this->invoiceBuyer->removeElement($invoice)) {
             // set the owning side to null (unless already changed)
-            if ($faktury->getNabywca() === $this) {
-                $faktury->setNabywca(null);
+            if ($invoice->getBuyer() === $this) {
+                $invoice->setBuyer(null);
             }
         }
 
@@ -122,29 +122,28 @@ class Person
     }
 
     /**
-     * @return Collection|Faktura[]
+     * @return Collection|Invoice[]
      */
-    public function getFakturaOdbiorca(): Collection
+    public function getInvoiceRecipient(): Collection
     {
-        return $this->fakturaOdbiorca;
+        return $this->invoiceRecipient;
     }
 
-    public function addFakturaOdbiorca(Faktura $fakturaOdbiorca): self
+    public function addInvoiceRecipient(Invoice $invoiceRecipient): self
     {
-        if (!$this->fakturaOdbiorca->contains($fakturaOdbiorca)) {
-            $this->fakturaOdbiorca[] = $fakturaOdbiorca;
-            $fakturaOdbiorca->setOdbiorca($this);
+        if (!$this->invoiceRecipient->contains($invoiceRecipient)) {
+            $this->invoiceRecipient[] = $invoiceRecipient;
+            $invoiceRecipient->setRecipient($this);
         }
 
         return $this;
     }
 
-    public function removeFakturaOdbiorca(Faktura $fakturaOdbiorca): self
+    public function removeInvoiceRecipient(Invoice $invoiceRecipient): self
     {
-        if ($this->fakturaOdbiorca->removeElement($fakturaOdbiorca)) {
-            // set the owning side to null (unless already changed)
-            if ($fakturaOdbiorca->getOdbiorca() === $this) {
-                $fakturaOdbiorca->setOdbiorca(null);
+        if ($this->invoiceRecipient->removeElement($invoiceRecipient)) {
+            if ($invoiceRecipient->getRecipient() === $this) {
+                $invoiceRecipient->setRecipient(null);
             }
         }
 

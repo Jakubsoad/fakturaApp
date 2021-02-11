@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4103a5-a38b-40c3-99da-ca8bce3f5019" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Algorytmy kombinatoryczne/.idea/Algorytmy kombinatoryczne.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercism/.idea/Exercism.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/.idea/JavaScript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ZnajdzImie/.idea/ZnajdzImie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../calculatorOOP-master/.idea/calcOOP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wakacjeRT/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../wakacjeRT/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FakturaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FakturaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FakturaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InvoiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Faktura.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/PozycjaFaktura.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/InvoiceItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/FakturaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/InvoiceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PersonRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PersonRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PozycjaFakturaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/InvoiceItemRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +17,90 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Jakubsoad/fakturaApp" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1nqQ1RXDKrdnwYX1fTWF8DDbvBe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -52,6 +130,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="PozycjaFakturaRepository.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fakturaApp/src/Repository/PozycjaFakturaRepository.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.PozycjaFakturaRepository.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +148,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612114925588</updated>
-      <workItem from="1612114926677" duration="6645000" />
+      <workItem from="1612114926677" duration="7791000" />
+      <workItem from="1613064692137" duration="1975000" />
     </task>
     <servers />
   </component>
@@ -71,10 +160,27 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612117047292">
+    <state x="297" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613071526752">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="297" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1612117047292" />
+    <state x="297" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1613071526752" />
+    <state x="297" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1613065155289" />
+    <state width="1280" height="204" key="GridCell.Tab.0.bottom" timestamp="1613065025823">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1613065025823" />
+    <state width="1280" height="204" key="GridCell.Tab.0.center" timestamp="1613065025814">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1613065025814" />
+    <state width="1280" height="204" key="GridCell.Tab.0.left" timestamp="1613065025813">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1613065025813" />
+    <state width="1280" height="204" key="GridCell.Tab.0.right" timestamp="1613065025815">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1613065025815" />
     <state x="302" y="129" key="NewPhpClassDialog" timestamp="1612119264666">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -83,6 +189,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="171" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1612117762626" />
+    <state x="321" y="149" width="637" height="502" key="find.popup" timestamp="1613064821072">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="321" y="149" width="637" height="502" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1613064821072" />
     <state x="424" y="191" key="refactoring.ChangeSignatureDialog" timestamp="1612120006084">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
