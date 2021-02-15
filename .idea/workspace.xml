@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e4103a5-a38b-40c3-99da-ca8bce3f5019" name="Default Changelist" comment="" />
+    <list default="true" id="1e4103a5-a38b-40c3-99da-ca8bce3f5019" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Service/InvoiceService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/InvoiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InvoiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Invoice.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -141,6 +145,7 @@
       <updated>1612114925588</updated>
       <workItem from="1612114926677" duration="7791000" />
       <workItem from="1613064692137" duration="2264000" />
+      <workItem from="1613420098479" duration="303000" />
     </task>
     <servers />
   </component>

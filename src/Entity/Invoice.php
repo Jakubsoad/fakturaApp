@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Entity;
 
 use App\Repository\InvoiceRepository;
@@ -95,7 +96,6 @@ class Invoice
     public function removeItem(InvoiceItem $item): self
     {
         if ($this->items->removeElement($item)) {
-            // set the owning side to null (unless already changed)
             if ($item->getInvoice() === $this) {
                 $item->setInvoice(null);
             }
