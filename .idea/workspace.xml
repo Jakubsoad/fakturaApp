@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e4103a5-a38b-40c3-99da-ca8bce3f5019" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FakturaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/InvoiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Faktura.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Person.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/PozycjaFaktura.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/InvoiceItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/FakturaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/InvoiceRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PersonRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PersonRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PozycjaFakturaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/InvoiceItemRepository.php" afterDir="false" />
-    </list>
+    <list default="true" id="1e4103a5-a38b-40c3-99da-ca8bce3f5019" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612114925588</updated>
       <workItem from="1612114926677" duration="7791000" />
-      <workItem from="1613064692137" duration="1975000" />
+      <workItem from="1613064692137" duration="2264000" />
     </task>
     <servers />
   </component>
@@ -165,21 +156,25 @@
     </state>
     <state x="297" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1613071526752" />
     <state x="297" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1613065155289" />
-    <state width="1280" height="204" key="GridCell.Tab.0.bottom" timestamp="1613065025823">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1280" height="204" key="GridCell.Tab.0.bottom" timestamp="1613072652245">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1613072652245" />
     <state width="1280" height="204" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1613065025823" />
-    <state width="1280" height="204" key="GridCell.Tab.0.center" timestamp="1613065025814">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1280" height="204" key="GridCell.Tab.0.center" timestamp="1613072652244">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1613072652244" />
     <state width="1280" height="204" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1613065025814" />
-    <state width="1280" height="204" key="GridCell.Tab.0.left" timestamp="1613065025813">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1280" height="204" key="GridCell.Tab.0.left" timestamp="1613072652243">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1613072652243" />
     <state width="1280" height="204" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1613065025813" />
-    <state width="1280" height="204" key="GridCell.Tab.0.right" timestamp="1613065025815">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1280" height="204" key="GridCell.Tab.0.right" timestamp="1613072652244">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1280" height="204" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1613072652244" />
     <state width="1280" height="204" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1613065025815" />
     <state x="302" y="129" key="NewPhpClassDialog" timestamp="1612119264666">
       <screen x="0" y="0" width="1280" height="800" />
